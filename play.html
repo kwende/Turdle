@@ -18,13 +18,14 @@
 </html>
 <body>
     <div class="input-group mb-3">
-        <input type="text" id="capitol_text" class="form-control" placeholder="Capitol" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="text" id="capitol_text" class="form-control" placeholder="Name an African Capital" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <div class="input-group-append">
-            <button id="save_capitol" class="btn btn-outline-secondary" type="button">Button</button>
+            <button id="save_capitol" class="btn btn-outline-secondary" type="button">Turdle</button>
         </div>
     </div>
 
     <div style="text-align:center;margin: auto;">
+        <h4> 1) Load up your alphabet below by correctly answering the question above ^^^ </h4>
         <div class="container">
             <span name="letter_button" id="a" class="border border-primary">&nbsp;</span>
             <span name="letter_button" id="b" class="border border-primary">&nbsp;</span>
@@ -62,7 +63,11 @@
     </div>
 
     <hr>
-
+    <hr>
+    <div style="text-align:center;margin: auto;">
+        <h4>2) Click the letters you earned above to...</h4>
+        <b>List the Presidents that can be found on US paper money</b>
+    </div>
     <!--Jackson-->
     <div style="text-align:center;margin: auto;">
         <div class="container">
@@ -159,9 +164,6 @@
         </div>
     </div>
 
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -172,7 +174,7 @@
         <h4 class="modal-title">Congrats!</h4>
       </div>
       <div class="modal-body">
-        <p>Message us with "GOOGLIEBAH" when done</p>
+        <p>Message us with "GOOGLIEBAH"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -224,12 +226,8 @@
             }
 
             if(all_done){
-                alert("congrats!");
+                $('#myModal').modal('show')
             }
-        })
-
-        $(".prez").click(function(){
-            alert('prez')
         })
 
     </script>
