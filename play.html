@@ -8,15 +8,18 @@
             /* CSS for Square boxes */
             span {
                 display: inline-block;
-                width: 70px;
-                height: 70px;
-                margin: 6px;
+                width: 30px;
+                height: 30px;
+                margin: 1px;
                 background-color: #DCDCDC;
             }
         </style>
     </head>
 </html>
 <body>
+    <div style="text-align:center;margin: auto;">
+        <h4>1) Provide answers to the following question...</h4>
+    </div>
     <div class="input-group mb-3">
         <input type="text" id="capitol_text" class="form-control" placeholder="Name an African Capital" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <div class="input-group-append">
@@ -25,48 +28,48 @@
     </div>
 
     <div style="text-align:center;margin: auto;">
-        <h4> 1) Load up your alphabet below by correctly answering the question above ^^^ </h4>
+        <h4> 2) To add letters you need to the following keyboard... </h4>
         <div class="container">
-            <span name="letter_button" id="a" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="b" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="c" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="d" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="e" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="f" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="g" class="border border-primary">&nbsp;</span>
-        </div>
-        <div class="container">
-            <span name="letter_button" id="h" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="i" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="j" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="k" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="l" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="m" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="n" class="border border-primary">&nbsp;</span>
-        </div>
-        <div class="container">
-            <span name="letter_button" id="o" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="p" class="border border-primary">&nbsp;</span>
             <span name="letter_button" id="q" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="w" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="e" class="border border-primary">&nbsp;</span>
             <span name="letter_button" id="r" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="s" class="border border-primary">&nbsp;</span>
             <span name="letter_button" id="t" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="y" class="border border-primary">&nbsp;</span>
             <span name="letter_button" id="u" class="border border-primary">&nbsp;</span>
         </div>
         <div class="container">
-            <span name="letter_button" id="v" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="w" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="x" class="border border-primary">&nbsp;</span>
-            <span name="letter_button" id="y" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="i" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="o" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="p" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="a" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="s" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="d" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="f" class="border border-primary">&nbsp;</span>
+        </div>
+        <div class="container">
+            <span name="letter_button" id="g" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="h" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="j" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="k" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="l" class="border border-primary">&nbsp;</span>
             <span name="letter_button" id="z" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="x" class="border border-primary">&nbsp;</span>
+        </div>
+        <div class="container">
+            <span name="letter_button" id="c" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="v" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="b" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="n" class="border border-primary">&nbsp;</span>
+            <span name="letter_button" id="m" class="border border-primary">&nbsp;</span>
         </div>
     </div>
 
     <hr>
     <hr>
     <div style="text-align:center;margin: auto;">
-        <h4>2) Click the letters you earned above to...</h4>
-        <b>List the Presidents that can be found on US paper money</b>
+        <h4>3) Tap any letters you've earned on your keyboard to...</h4>
+        <b>Spell the Presidents that can be found on US paper money</b>
     </div>
     <!--Jackson-->
     <div style="text-align:center;margin: auto;">
@@ -211,6 +214,7 @@
                     }
                 }
             }
+            $("#capitol_text").val('')
         }); 
         $("[name='letter_button']").click(function(e){
             var letter = e.currentTarget.innerText.toLowerCase(); 
